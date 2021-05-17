@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html>
+<?php include('navigation-pane.html'); ?>
+<head>
+<title> Submission Hub </title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="fyp.css">
+<link rel="icon" href="website-heart.png">
+</head>
+<body>
+<h1> Submit a Post </h1>
+<h4> Feel free to leave any of the following fields blank: Name, Institution and/or Contact info </h4>
+<form action="post-submission-save.php" method="post">
+
+<div>
+<label for="name">Name: </label>
+<input type="text" id="name" name="name">
+</div>
+
+<div>
+<label for="topic">Topic: </label>
+<input type="text" id="topic" name="topic">
+</div>
+
+<div>
+<label for="institution">Institution: </label>
+	<select id="institution" name="institution">
+		<option>None/Other</option>
+		<option>University of Aberdeen</option>
+		<option>Abertay University</option>
+		<option>Aberystwyth University</option>
+		<option>AECC University College</option>
+		<option>Anglia Ruskin University</option>
+		<option>Arden University</option>
+		<option>Ashridge Executive Education</option>
+		<option>Aston University</option>
+		<option>Bangor University</option>
+		<option>University of Bath</option>
+		<option>Bath Spa University</option>
+		<option>University of Bedfordshire</option>
+		<option>University of Birmingham</option>
+		<option>Birmingham City University</option>
+		<option>University College Birmingham</option>
+		<option>Birkbeck, University of London</option>
+		<option>Bishop Grosseteste University</option>
+		<option>University of Bolton</option>
+		<option>The Arts University Bournemouth</option>
+		<option>Bournemouth University</option>
+		<option>BPP University</option>
+		<option>University of Bradford</option>
+		<option>University of Brighton</option>
+		<option>University of Bristol</option>
+		<option>Brunel University</option>
+		<option>University of Buckingham</option>
+		<option>Buckinghamshire New University</option>
+		<option>University of Cambridge</option>
+		<option>Canterbury Christ Church University</option>
+		<option>Cardiff Metropolitan University</option>
+		<option>Cardiff University</option>
+		<option>University of Chester</option>
+		<option>University of Chichester</option>
+		<option>City, University of London</option>
+		<option>Courtauld Institute of Art</option>
+		<option>Coventry University</option>
+		<option>Cranfield University</option>
+		<option>University for the Creative Arts</option>
+		<option>University of Cumbria</option>
+		<option>De Montfort University</option>
+		<option>University of Derby</option>
+		<option>University of Dundee</option>
+		<option>Durham University</option>
+		<option>Dyson Institute of Engineering and Technology</option>
+		<option>University of East Anglia</option>
+		<option>University of East London</option>
+		<option>Edge Hill University</option>
+		<option>University of Edinburgh</option>
+		<option>Edinburgh Napier University</option>
+		<option>University College of Estate Management</option>
+		<option>University of Essex</option>
+		<option>University of Exeter</option>
+		<option>Falmouth University</option>
+		<option>University of Glasgow</option>
+		<option>Glasgow Caledonian University</option>
+		<option>University of Gloucestershire</option>
+		<option>Goldsmiths, University of London</option>
+		<option>University of Greenwich</option>
+		<option>Guildhall School of Music and Drama</option>
+		<option>Harper Adams University</option>
+		<option>Hartpury University</option>
+		<option>Heriot-Watt University</option>
+		<option>University of Hertfordshire</option>
+		<option>University of the Highlands & Islands</option>
+		<option>University of Huddersfield</option>
+		<option>University of Hull</option>
+		<option>Imperial College London</option>
+		<option>Institute of Cancer Research</option>
+		<option>Keele University</option>
+		<option>University of Kent</option>
+		<option>King's College London</option>
+		<option>Kingston University</option>
+		<option>University of Central Lancashire</option>
+		<option>Lancaster University</option>
+		<option>University of Leeds</option>
+		<option>Leeds Arts University</option>
+		<option>Leeds Beckett University</option>
+		<option>Leeds Trinity University</option>
+		<option>University of Leicester</option>
+		<option>University of Lincoln</option>
+		<option>University of Liverpool</option>
+		<option>Liverpool Hope University</option>
+		<option>Liverpool John Moores University</option>
+		<option>Liverpool School of Tropical Medicine</option>
+		<option>University of London</option>
+		<option>University College London</option>
+		<option>London Business School</option>
+		<option>London School of Economics and Political Science</option>
+		<option>London School of Hygiene and Tropical Medicine</option>
+		<option>London Institute of Banking and Finance</option>
+		<option>London Interdisciplinary School</option>
+		<option>London Metropolitan University</option>
+		<option>London South Bank University</option>
+		<option>Loughborough University</option>
+		<option>University of Manchester</option>
+		<option>Manchester Metropolitan University</option>
+		<option>Middlesex University</option>
+		<option>NCG</option>
+		<option>Newcastle University</option>
+		<option>New College of the Humanities at Northeastern</option>
+		<option>Newman University</option>
+		<option>University of Northampton</option>
+		<option>Northumbria University</option>
+		<option>Norwich University of the Arts</option>
+		<option>University of Nottingham</option>
+		<option>Nottingham Trent University</option>
+		<option>The Open University</option>
+		<option>School of Oriental and African Studies</option>
+		<option>University College of Osteopathy</option>
+		<option>University of Oxford</option>
+		<option>Oxford Brookes University</option>
+		<option>Plymouth Marjon University</option>
+		<option>University of Plymouth</option>
+		<option>University of Portsmouth</option>
+		<option>Queen Margaret University</option>
+		<option>Queen Mary, University of London</option>
+		<option>Queen's University Belfast</option>
+		<option>Ravensbourne University London</option>
+		<option>University of Reading</option>
+		<option>Regent's University London</option>
+		<option>The Robert Gordon University</option>
+		<option>Roehampton University</option>
+		<option>Royal Academy of Music</option>
+		<option>Royal Agricultural University</option>
+		<option>Royal Central School of Speech and Drama</option>
+		<option>Royal College of Music</option>
+		<option>Royal College of Art</option>
+		<option>Royal Conservatoire of Scotland</option>
+		<option>Royal Northern College of Music</option>
+		<option>Royal Holloway, University of London</option>
+		<option>Royal Veterinary College</option>
+		<option>Richmond, The American International University in London</option>
+		<option>Rose Bruford College of Theatre and Performance</option>
+		<option>University of Salford</option>
+		<option>University of Sheffield</option>
+		<option>Sheffield Hallam University</option>
+		<option>University of South Wales</option>
+		<option>University of Southampton</option>
+		<option>Solent University</option>
+		<option>University of St Andrews</option>
+		<option>St. George's, University of London</option>
+		<option>St Mary's University</option>
+		<option>Staffordshire University</option>
+		<option>University of Stirling</option>
+		<option>University of Strathclyde</option>
+		<option>University of Suffolk</option>
+		<option>University of Sunderland</option>
+		<option>University of Surrey</option>
+		<option>University of Sussex</option>
+		<option>Swansea University</option>
+		<option>Teesside University</option>
+		<option>Trinity Laban Conservatoire of Music and Dance</option>
+		<option>University of Ulster</option>
+		<option>University of the Arts London</option>
+		<option>Ulster University</option>
+		<option>University of Law</option>
+		<option>University of Wales</option>
+		<option>University of Wales, Trinity Saint David</option>
+		<option>University of Warwick</option>
+		<option>University of the West of England</option>
+		<option>University of the West of Scotland</option>
+		<option>University of West London</option>
+		<option>University of Westminster</option>
+		<option>University of Winchester</option>
+		<option>University of Wolverhampton</option>
+		<option>University of Worcester</option>
+		<option>Wrexham Glyndŵr University</option>
+		<option>Writtle University College</option>
+		<option>University of York</option>
+		<option>York St John University</option>
+	</select>	
+</div>
+
+<div>
+<label for="title">Title for your post: </label>
+<input type="text" id="title" name="title">
+</div>
+
+<div>
+<label for="body">Description: </label>
+<textarea id="body" name="body" rows="4" cols="50">
+Describe your situation as best you can. 
+Be as open or as private as you feel comfortable with.
+</textarea>
+</div>
+
+<div>
+<label for="contact_info">Contact info (optional):</label>
+<input type="text" id="contact_info" name="contact_info">
+</div>
+
+<input type="submit" name="submitBtn" value="Submit">
+</form>
+</body>
+</html>

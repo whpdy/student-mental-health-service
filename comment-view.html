@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Comment on this post</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="fyp.css">
+<link rel="icon" href="website-heart.png">
+</head>
+<?php
+include('navigation-pane.html');
+echo "<h1> Submission {$sub['id']}: \"{$sub['title']}\"  </h1>";
+echo "<table>";
+echo "<tr>	<th>Posted by</th>
+			<th>Topic</th>
+			<th>Institution</th>
+			<th>Title</th>
+			<th>Body</th>
+			<th>Date</th>
+			<th>Time</th>
+			<th>Contact Info</th>	<tr>";
+			
+echo "<tr>";
+echo "<td>{$sub['name']}</td>";
+echo "<td>{$sub['topic']}</td>";
+echo "<td>{$sub['institution']}</td>";
+echo "<td>{$sub['title']}</td>";
+echo "<td>{$sub['body']}</td>";
+echo "<td>{$sub['date']}</td>";
+echo "<td>{$sub['time']}</td>";
+echo "<td>{$sub['contact_info']}</td>";
+echo "</tr>";
+echo "</table>";
+?>
+
+<p> Make a supportive comment regarding this person's situation. </p>
+
+<form action="comment-save.php" method="post">
+<textarea id="comment" name="comment" rows="15" cols="100">Comment here!</textarea>
+<input type="hidden" name="id" value=" <?php echo $sub['id']; ?>">
+
+<div>
+<input type="submit" name="submitBtn" value="Comment">
+</div>
+</form>
+</html>

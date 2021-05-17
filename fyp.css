@@ -1,0 +1,36 @@
+*, #nav {
+	text-align: center;
+	background-color: orange;
+	font-family: Verdana;
+	font-size: 14px;
+}
+
+a {
+	background-color: white;
+}
+
+table, th, td, nav {
+    border: 1px solid black;
+	background-color: white;
+	color: black;
+	text-align:  center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul {
+	list-style-position: inside;
+}
+
+div {
+	margin: 4px;
+}
+
+input, select, textarea {
+	padding: 2px ;
+	background-color: white;
+	font-family: Verdana;
+	border: 1px solid black;
+}
+
+

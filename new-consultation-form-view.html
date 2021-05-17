@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Book a Consultation</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="fyp.css">
+<link rel="icon" href="website-heart.png">
+</head>
+<form action="new-consultation-save.php" method="post">
+
+<div>
+<?php
+include('navigation-pane.html');
+echo "<h2> Hello, " . $consultee_given_name . ". Below is a list of our consultants and their specialities. 
+Please choose who you would like to speak to. ";
+
+# Consultant Table
+echo "<h3> Consultants: </h3>";
+echo "<table>";
+echo "<tr><th>ID</th>
+		  <th>Name</th>
+		  <th>Speciality</th><tr>";
+		  
+foreach($consultants as $con)
+{
+	echo "<tr>";
+	echo "<td>{$con['id']}</td>";
+	echo "<td>{$con['first_name']} {$con['last_name']}</td>";
+	echo "<td>{$con['speciality']}</td>";
+	echo "</tr>";
+}
+echo "</table>";
+?>
+
+<!-- Consultant Choice -->
+<label for="consultant">Choose your consultant: </label>
+	<select id="consultant" name="consultant">
+		<option name="1" value="1">Daniel Shepherd</option>
+		<option name="2" value="2">Hady Smith</option>
+		<option name="3" value="3">Victoria Bamford</option>
+		<option name="4" value="4">Laurie Nicholson</option>
+		<option name="5" value="5">Harriett Berrow</option>
+		<option name="6" value="6">Peter Hart</option>
+		<option name="7" value="7">Paula Fulhouz</option>
+	</select>
+	
+<label for="consultee_given_name">Confirm (or change) your given name: </label>
+<input type="text" value="<?php echo $consultee_given_name; ?>" id="consultee_given_name_passed" name="consultee_given_name_passed">
+	
+<!-- Consultant Date & Time -->
+<label for="date">Pick a date: </label>
+<input type="date" id="date" name="date">
+
+<label for="time">Pick a time: </label>
+<input type="time" id="time" name="time">
+
+<input type="submit" name="submitBtn" value="Submit">
+</form>
+
